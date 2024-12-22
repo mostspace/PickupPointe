@@ -1,0 +1,388 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('./assets/fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('./assets/fonts/gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gilroy", sans-serif !important;
+  overflow-x: hidden !important;
+}
+
+.header-container.fixed {
+  box-shadow: 0 0 2px #a7b2b2, 0 4px 12px rgba(0, 0, 0, .36), inset 0 0 0 0.5px hsla(0, 0%, 93%, .36);
+  border-radius: 0 0 12px 12px;
+  transition: box-shadow .2s ease-in-out, background .2s ease-in-out, padding .2s ease-in-out, height .2s ease-in-out;
+}
+.slick-dots li.slick-active button:before {
+  background: rgba(241, 68, 69, 1) !important;
+  content: '' !important;
+}
+.slick-dots li button:before {
+  content: '' !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 120px !important;
+}
+.slick-dots {
+  bottom: -50px !important;
+}
+
+@media (max-width:900px) {
+  .slick-dots {
+    bottom: 0px !important;
+  }
+  .logo {
+    width: 88px;
+    height: 66px;
+  }
+}
+
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Custom */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Landing Fade effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: adds a slight slide-up effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast-custom {
+  font-family: 'Gilroy';
+  font-size: 14px;
+}
+
+/* CSS for approach-from-distance effect */
+.approach-from-distance {
+  opacity: 0;
+  transform: scale(0.7) translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.8s ease-out;
+}
+
+.approach-from-distance.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* CSS for fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Continue adding more classes as needed */
+
+
+/* Begin::Custom TextField */
+.pp-input {
+  transition: 0.3s;
+}
+.pp-input svg {
+  width: 18px;
+}
+.pp-input .MuiInputBase-input {
+  padding: 11px 12px !important;
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  display: flex !important;
+  align-items: center !important;
+}
+.pp-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.08);
+  border-radius: 8px !important;
+  height: 45px !important;
+}
+
+.pp-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #F14445;
+  border-width: 1px;
+  transition: 0.3s !important;
+  
+}
+.css-1vy6t9p-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, .css-1ftwu97-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline{  
+  border-color: #F14445 !important;
+  transition: 0.3s !important;
+}
+
+.MuiFormControlLabel-label {
+  font-family: 'Gilroy' !important;
+}
+
+.svg-active {
+  filter: invert(25%) sepia(93%) saturate(7487%) hue-rotate(353deg) brightness(97%) contrast(106%);
+}
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root.Mui-active, .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiStepIcon-root.Mui-completed {
+  color: #F14445 !important;
+  font-family: 'Gilroy';
+}
+.MuiStepLabel-label {
+  font-family: 'Gilroy' !important;
+}
+
+@media (max-width: 768px) {
+  .MuiStepLabel-label {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* Stepper */
+@media (max-width:480px) {
+  .css-ascpo7-MuiStepLabel-root {
+    display: block !important;
+  }
+  .css-vnkopk-MuiStepLabel-iconContainer {
+    justify-content: center;
+  }
+}
+
+/* Custom MUI TextField */
+.MuiOutlinedInput-notchedOutline:hover {  
+  border-color: red !important;
+}
+.MuiInputBase-input.MuiOutlinedInput-input {
+  font-family: 'Gilroy' !important;
+  font-size: 14px;
+  height: 23px;
+}
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {
+  border-radius: 24px !important;
+  max-width: 772px !important;
+  width: 100%;
+}
+
+.MuiBadge-badge.MuiBadge-colorPrimary {
+  background-color: #F14445 !important;
+}
+.MuiButtonBase-root.MuiPaginationItem-colorPrimary.MuiPaginationItem-textPrimary.Mui-selected {
+  background-color: #F14445 !important;
+}
+.MuiTabs-indicator {
+  background-color: transparent !important;
+}
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
+  /* background-color: #f6f6f6;
+  border-radius: 6px; */
+  border-bottom: 2px solid #F14445;
+}
+.MuiPaper-root.MuiPaper-elevation.MuiMenu-paper.MuiMenu-paper {
+  border-radius: 12px;
+  border: 1px solid var(--stroke-12, rgba(0, 0, 0, 0.12));
+  background: var(--White, #FEFEFF);
+  box-shadow: 0px 1px 5px 0px rgba(27, 26, 33, 0.10);
+  min-width: 130px;
+}
+#tab-label .MuiTabs-indicator {
+  background-color: #F14445 !important;
+}
+.MuiPaper-root.MuiTableContainer-root {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+.MuiInputBase-input.MuiOutlinedInput-input {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiChip-deleteIcon.MuiChip-deleteIconSmall.MuiChip-deleteIconColorTags.MuiChip-deleteIconSoftColorTags {
+  color: #666666;
+}
+.MuiInputBase-input.MuiAutocomplete-input {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.MuiInputBase-root textarea {
+  padding: 0 !important;
+}
+#vendor-dashboard .MuiTableCell-root.MuiTableCell-body.MuiTableCell-sizeMedium {
+  padding: 7px;
+}
+li {
+  font-family: 'Gilroy';
+  font-size: 14px;
+}
+.category-card {
+  border-radius: 16px;
+  border: 1px solid var(--stroke-2, rgba(0, 0, 0, 0.02));
+  background: var(--White, #FEFEFF);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+/* Assuming you have a CSS file or a styled component */
+.clamp-3-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.MuiButton-icon.MuiButton-startIcon.MuiButton-iconSizeMedium {
+  margin: 0;
+}
+
+/* Slick Slider */
+.slick-prev:before, .slick-next:before {
+  color: #181818 !important;
+}
+
+.rightBorderNoneTextField > .MuiInputBase-root {
+  border-radius: 6px 0 0 6px !important;
+}
+
+/* Custom CSS for the background fade effect */
+.bg-dark-fade {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0));
+}
+
+/* Custom Scrollbar Styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #F14445; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners on the scrollbar thumb */
+  border: 2px solid transparent; /* Space around the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when hovering over the scrollbar thumb */
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin; /* For Firefox */
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent; /* Background of the track */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 0, 0.5); /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 0, 0, 0.7); /* Color on hover */
+}
+
+.slider-container .slick-track {
+  margin-left: unset !important;
+  /* transform: unset !important; */
+}
+
+.MuiTablePagination-selectLabel {
+  font-family: 'Gilroy';
+}
+
+.MuiAutocomplete-noOptions {
+  font-family: 'Gilroy';
+  font-size: 14px;
+  color: #181818;
+}
+
+.bouncing-icon {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+.setting-item {
+  transition: all 0.15s ease-in-out;
+}
+
+.setting-item:hover {
+  background-color: #e0e0e0;
+}
+
+.setting-item:active {
+  background-color: #d0d0d0;
+  transform: scale(0.98); /* Slight scale down effect for a press-like interaction */
+}
+
+.click-item {
+  transition: all 0.15s ease-in-out;
+}
+
+.click-item:active {
+  transform: scale(0.98);
+}

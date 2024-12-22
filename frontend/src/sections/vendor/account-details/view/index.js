@@ -1,0 +1,1 @@
+export { default as AccountDetailsView } from './account-details-view';

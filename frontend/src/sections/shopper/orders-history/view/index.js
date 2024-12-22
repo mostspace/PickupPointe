@@ -1,0 +1,1 @@
+export { default as OrdersHistoryView } from './orders-history-view';

@@ -1,0 +1,1 @@
+export { default as CustomizeView } from './customize-view';

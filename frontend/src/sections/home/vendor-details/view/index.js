@@ -1,0 +1,1 @@
+export { default as VendorDetailsView } from './vendor-details-view';

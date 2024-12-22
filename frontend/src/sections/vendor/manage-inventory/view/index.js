@@ -1,0 +1,1 @@
+export { default as ManageInventoryView } from './manage-inventory-view';

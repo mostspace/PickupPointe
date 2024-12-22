@@ -1,0 +1,1 @@
+export { default as PaymentMethodView } from './payment-method-view';

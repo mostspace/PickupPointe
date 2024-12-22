@@ -1,0 +1,1 @@
+export { default as GiveUsFeedbackView } from './give-us-feedback-view';

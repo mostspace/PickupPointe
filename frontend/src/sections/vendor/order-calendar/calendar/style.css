@@ -1,0 +1,102 @@
+
+/* CalendarView.css */
+.rbc-event {
+  background-color: unset !important;
+  padding: 0;
+}
+
+.rbc-month-view {
+  width: 100%;
+  min-width: 760px;
+  border-radius: 8px;
+}
+
+
+/* Adjust calendar height for smaller screens */
+@media (max-width: 600px) {
+  .rbc-calendar {
+    height: auto;
+  }
+
+  .rbc-month-view {
+    width: 100%;
+    min-width: 760px;
+  }
+
+  .rbc-day-bg, .rbc-date-cell, .rbc-event {
+    font-size: 10px;
+  }
+
+  .rbc-toolbar-label {
+    font-size: 14px;
+  }
+
+  .rbc-header, .rbc-day-header {
+    font-size: 12px;
+  }
+
+  .rbc-date-cell {
+    padding: 5px;
+  }
+
+  .rbc-event {
+    padding: 0;
+    margin: 1px;
+  }
+
+}
+
+.out-ranged-calendar {
+  background-color: #b1b1b13b;
+  cursor: not-allowed;
+}
+
+.out-ranged-calendar:hover {
+  background-color: #b1b1b13b;
+  cursor: not-allowed;
+}
+
+.blocked-calendar {
+  background-color: rgba(188, 188, 188, 0.12);
+}
+
+.blocked-calendar:hover {
+  background-color: rgba(188, 188, 188, 0.12);
+}
+
+.service-time {
+  position: relative;
+}
+
+.status-dot {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.ordering-opened {
+  background-color: #3ACC48;
+}
+
+.ordering-closed {
+  background-color: #F14445;
+}
+
+.ordering-close-soon {
+  background-color: #F1A144;
+}
+
+.rbc-day-column {
+  min-width: 150px; /* Set your desired minimum width */
+}
+
+.rbc-date-cell, .rbc-event-content, .rbc-header{
+  min-width: 118.6px;
+}
+
+.rbc-row, .rbc-row-content, .rbc-month-row, .rbc-month-view {
+  min-width: 830.2px!important;
+}

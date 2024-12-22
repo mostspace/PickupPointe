@@ -1,0 +1,1 @@
+export { default as OutOfStockView } from './out-of-stock-view';

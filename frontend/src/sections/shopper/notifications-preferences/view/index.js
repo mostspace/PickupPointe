@@ -1,0 +1,1 @@
+export { default as NotificationsPreferencesView } from './notifications-preferences-view';

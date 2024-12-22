@@ -1,0 +1,1 @@
+export { default as VendorSupportView } from './support-view';

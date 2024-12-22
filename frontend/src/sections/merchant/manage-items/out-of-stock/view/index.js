@@ -1,0 +1,1 @@
+export { default as ManageItemOutOfStockView } from './manage-item-out-of-stock-view';

@@ -1,0 +1,1 @@
+export { default as BankingInformationView } from './banking-information-view';

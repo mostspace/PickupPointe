@@ -1,0 +1,1 @@
+export { default as CustomerLoyaltyView } from './customer-loyalty-view';

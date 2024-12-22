@@ -1,0 +1,1 @@
+export { default as VendorProfileView } from './vendor-profile-view'

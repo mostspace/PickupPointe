@@ -1,0 +1,1 @@
+export { default as OrderLocalView } from './order-local-view';

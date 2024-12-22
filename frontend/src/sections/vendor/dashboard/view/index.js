@@ -1,0 +1,1 @@
+export { default as VendorDashboardView } from './dashboard-view';

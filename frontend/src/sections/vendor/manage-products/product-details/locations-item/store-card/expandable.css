@@ -1,0 +1,9 @@
+.slick-list {
+    height: auto !important;
+}
+.expand-button {
+    transition: transform 0.3s;
+}
+.expand-button.expanded {
+    transform: rotate(180deg);
+}

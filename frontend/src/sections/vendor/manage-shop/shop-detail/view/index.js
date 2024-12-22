@@ -1,0 +1,1 @@
+export { default as ViewShopDetail } from './view-shop-detail'

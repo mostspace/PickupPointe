@@ -1,0 +1,1 @@
+export { default as ManageLocationView } from './manage-location-view';

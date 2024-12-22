@@ -1,0 +1,1 @@
+export { default as ManageShopView } from './view-shop-view'

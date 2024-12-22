@@ -1,0 +1,1 @@
+export { default as OrderDetailsView } from './order-details-view';

@@ -1,0 +1,1 @@
+export { default as GetHelpView } from './get-help-view';

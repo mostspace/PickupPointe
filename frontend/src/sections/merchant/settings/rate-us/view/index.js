@@ -1,0 +1,1 @@
+export { default as RateUsView } from './rate-us-view';

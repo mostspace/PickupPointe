@@ -1,0 +1,1 @@
+export { default as SearchOrderView } from './search-order-view'

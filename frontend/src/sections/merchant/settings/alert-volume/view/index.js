@@ -1,0 +1,1 @@
+export { default as AlertVolumeView } from './alert-volume-view';

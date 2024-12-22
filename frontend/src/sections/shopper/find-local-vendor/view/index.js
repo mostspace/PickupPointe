@@ -1,0 +1,1 @@
+export { default as FindLocalVendorsView } from './find-local-vendors-view'
